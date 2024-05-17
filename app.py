@@ -84,17 +84,3 @@ if st.button("Say hello"):
     st.write("Hello World!")
 if st.checkbox("Show/Hide"):
     st.write("Happy nyannko!nyannko!!")
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-st.set_option('deprecation.showPyplotGlobalUse', False)
-
-def plot_graph():
-    x = np.linspace(-7, 7, 100)
-    y = np.sin(x)
-    plt.plot(x, y)
-    st.pyplot()
-
-if st.button('Plot graph'):
-    plot_graph()
