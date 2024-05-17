@@ -1,4 +1,3 @@
 matplotlib
 gtts
-base64
 numpy
