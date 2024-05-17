@@ -1,0 +1,3 @@
+matplotlib
+gtts
+base64
