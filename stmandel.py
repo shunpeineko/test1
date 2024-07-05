@@ -8,6 +8,15 @@ y0 = st.text_input("y=")
 z0 = st.text_input("倍率=",1)
 mj0 = st.radio(label="選んでください",
                  options=("Mandel","Julia"),
+                 horizontal=True)
+
+cL = []
+maxn = 100
+
+def mandel(a,b):
+    a0,b0 = a,b
+    i = 0
+    while a**2+b**2 <= 4 and i < maxn:
         #print(i,a,b)
         a2 = a*a - b*b + a0
         b2 = a*b*2 + b0
